@@ -20,7 +20,7 @@ import (
 	"io"
 
 	"github.com/palantir/stacktrace"
-	"github.com/sumup-oss/go-pkgs/os"
+	"github.com/sumup-oss/vaulted/pkg/os"
 )
 
 var ErrEmptyValue = errors.New("empty value")

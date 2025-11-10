@@ -17,7 +17,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/sumup-oss/go-pkgs/os"
+	"github.com/sumup-oss/vaulted/pkg/os"
 
 	"github.com/sumup-oss/vaulted/cmd"
 	"github.com/sumup-oss/vaulted/pkg/aes"

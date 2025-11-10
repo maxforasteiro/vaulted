@@ -19,13 +19,13 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/sumup-oss/go-pkgs/os/ostest"
-	gopkgsTestUtils "github.com/sumup-oss/go-pkgs/testutils"
 	"github.com/sumup-oss/vaulted/pkg/aes"
 	"github.com/sumup-oss/vaulted/pkg/base64"
 	"github.com/sumup-oss/vaulted/pkg/hcl"
+	"github.com/sumup-oss/vaulted/pkg/os/ostest"
 	"github.com/sumup-oss/vaulted/pkg/pkcs7"
 	"github.com/sumup-oss/vaulted/pkg/rsa"
+	"github.com/sumup-oss/vaulted/pkg/testutils"
 )
 
 func TestNewTerraformCmd(t *testing.T) {
@@ -69,7 +69,7 @@ func TestTerraformCmd_Execute(t *testing.T) {
 		aesSvc,
 	)
 
-	_, err := gopkgsTestUtils.RunCommandInSameProcess(
+	_, err := testutils.RunCommandInSameProcess(
 		cmdInstance,
 		[]string{},
 		outputBuff,
