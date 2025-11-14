@@ -26,17 +26,15 @@ import (
 
 	"github.com/sumup-oss/vaulted/pkg/vaulted"
 
-	"github.com/sumup-oss/vaulted/pkg/testutils"
-
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/go-pkgs/os"
-	"github.com/sumup-oss/go-pkgs/os/ostest"
-	gopkgsTestUtils "github.com/sumup-oss/go-pkgs/testutils"
 	"github.com/sumup-oss/vaulted/pkg/aes"
 	"github.com/sumup-oss/vaulted/pkg/base64"
+	"github.com/sumup-oss/vaulted/pkg/os"
+	"github.com/sumup-oss/vaulted/pkg/os/ostest"
 	"github.com/sumup-oss/vaulted/pkg/pkcs7"
 	"github.com/sumup-oss/vaulted/pkg/rsa"
+	"github.com/sumup-oss/vaulted/pkg/testutils"
 )
 
 func TestNewResourceCmd_Execute(t *testing.T) {
@@ -60,7 +58,7 @@ func TestNewResourceCmd_Execute(t *testing.T) {
 				aesSvc,
 			)
 
-			_, err := gopkgsTestUtils.RunCommandInSameProcess(
+			_, err := testutils.RunCommandInSameProcess(
 				cmdInstance,
 				[]string{},
 				outputBuff,
@@ -79,7 +77,7 @@ func TestNewResourceCmd_Execute(t *testing.T) {
 			"it prints encrypted passphrase in stdout and "+
 			"writes encrypted content at 'out' file path",
 		func(t *testing.T) {
-			tmpDir := gopkgsTestUtils.TestCwd(t, "vaulted")
+			tmpDir := testutils.TestCwd(t, "vaulted")
 
 			outputBuff := &bytes.Buffer{}
 			realOsExecutor := &os.RealOsExecutor{}
@@ -130,7 +128,7 @@ func TestNewResourceCmd_Execute(t *testing.T) {
 				fmt.Sprintf("--resource-name=%s", resourceNameArg),
 			}
 
-			_, err = gopkgsTestUtils.RunCommandInSameProcess(
+			_, err = testutils.RunCommandInSameProcess(
 				cmdInstance,
 				cmdArgs,
 				outputBuff,

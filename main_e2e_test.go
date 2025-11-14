@@ -24,11 +24,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/go-pkgs/os"
-	"github.com/sumup-oss/go-pkgs/testutils"
-	gopkgsTestUtils "github.com/sumup-oss/go-pkgs/testutils"
 	"github.com/sumup-oss/vaulted/internal/e2e"
-	vaultedTestUtils "github.com/sumup-oss/vaulted/pkg/testutils"
+	"github.com/sumup-oss/vaulted/pkg/os"
+	"github.com/sumup-oss/vaulted/pkg/testutils"
 	"github.com/sumup-oss/vaulted/pkg/vaulted/payload"
 )
 
@@ -61,7 +59,7 @@ func TestMain(m *testing.M) {
 func TestMvpWorkflow(t *testing.T) {
 	t.Parallel()
 
-	tmpDir := gopkgsTestUtils.TestDir(t, "vaulted")
+	tmpDir := testutils.TestDir(t, "vaulted")
 	defer stdOs.RemoveAll(tmpDir)
 
 	// NOTE: Create a build before switching dirs
@@ -69,7 +67,7 @@ func TestMvpWorkflow(t *testing.T) {
 
 	// NOTE: Switch to tmp dir to make sure we're not
 	// relying on content inside the non-temporary dir (previous cwd).
-	gopkgsTestUtils.TestChdir(t, tmpDir)
+	testutils.TestChdir(t, tmpDir)
 
 	privKeyPath, privKey := testutils.GenerateAndWritePrivateKey(t, tmpDir, "priv.key")
 	pubKeyPath := testutils.GenerateAndWritePublicKey(t, tmpDir, "pub.key", privKey)
@@ -344,7 +342,7 @@ func TestMvpWorkflow(t *testing.T) {
 func TestV1TerraformWorkflow(t *testing.T) {
 	t.Parallel()
 
-	tmpDir := gopkgsTestUtils.TestDir(t, "vaulted")
+	tmpDir := testutils.TestDir(t, "vaulted")
 	defer stdOs.RemoveAll(tmpDir)
 
 	// NOTE: Create a build before switching dirs
@@ -352,7 +350,7 @@ func TestV1TerraformWorkflow(t *testing.T) {
 
 	// NOTE: Switch to tmp dir to make sure we're not
 	// relying on content inside the non-temporary dir (previous cwd).
-	gopkgsTestUtils.TestChdir(t, tmpDir)
+	testutils.TestChdir(t, tmpDir)
 
 	privKeyPath, privKey := testutils.GenerateAndWritePrivateKey(t, tmpDir, "priv.key")
 	pubKeyPath := testutils.GenerateAndWritePublicKey(t, tmpDir, "pub.key", privKey)
@@ -391,7 +389,7 @@ func TestV1TerraformWorkflow(t *testing.T) {
 	require.Nil(t, err)
 
 	// NOTE: Make sure we actually wrote valid terraform resources
-	regexMatches := vaultedTestUtils.NewTerraformRegex.FindAllStringSubmatch(string(tfFileContent), -1)
+	regexMatches := testutils.NewTerraformRegex.FindAllStringSubmatch(string(tfFileContent), -1)
 	assert.Equal(t, 1, len(regexMatches))
 
 	rotatedTfFilePath := path.Join(tmpDir, "rotated.tf")
@@ -418,7 +416,7 @@ func TestV1TerraformWorkflow(t *testing.T) {
 	require.Nil(t, err)
 
 	// NOTE: Make sure we actually wrote valid terraform resources
-	regexMatches = vaultedTestUtils.NewTerraformRegex.FindAllStringSubmatch(string(rotatedTfFileContent), -1)
+	regexMatches = testutils.NewTerraformRegex.FindAllStringSubmatch(string(rotatedTfFileContent), -1)
 	assert.Equal(t, 1, len(regexMatches))
 
 	rekeyedTfFilePath := path.Join(tmpDir, "rekeyed.tf")
@@ -448,6 +446,6 @@ func TestV1TerraformWorkflow(t *testing.T) {
 	require.Nil(t, err)
 
 	// NOTE: Make sure we actually wrote valid terraform resources
-	regexMatches = vaultedTestUtils.NewTerraformRegex.FindAllStringSubmatch(string(rekeyedTfFileContent), -1)
+	regexMatches = testutils.NewTerraformRegex.FindAllStringSubmatch(string(rekeyedTfFileContent), -1)
 	assert.Equal(t, 1, len(regexMatches))
 }

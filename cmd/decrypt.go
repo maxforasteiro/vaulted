@@ -22,7 +22,7 @@ import (
 	awsconfig "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/palantir/stacktrace"
 	"github.com/spf13/cobra"
-	"github.com/sumup-oss/go-pkgs/os"
+	"github.com/sumup-oss/vaulted/pkg/os"
 
 	"github.com/sumup-oss/vaulted/cmd/external_interfaces"
 	"github.com/sumup-oss/vaulted/internal/cli"
@@ -35,11 +35,11 @@ import (
 // nolint:lll
 const decryptExample = `
   # Decryption using local RSA asymmetric keypair. This requires the "--in" to have been encrypted using local RSA public key.
-  > vaulted decrypt --private-key-path ./my-pubkey.pem --in ./mysecret-enc.base64 --out ./mysecret.txt 
+  > vaulted decrypt --private-key-path ./my-pubkey.pem --in ./mysecret-enc.base64 --out ./mysecret.txt
 
   # Decryption using AWS KMS asymmetric keypair. This requires the "--in" to have been encrypted using local AWS KMS asymmetric public key.
   # Make sure to set the correct AWS_REGION and AWS_PROFILE where the AWS KMS key is present.
-  > AWS_REGION=eu-west-1 AWS_PROFILE=secretprofile vaulted decrypt --aws-kms-key-id=alias/yourkey  --in ./mysecret-enc.base64 --out ./mysecret.txt 
+  > AWS_REGION=eu-west-1 AWS_PROFILE=secretprofile vaulted decrypt --aws-kms-key-id=alias/yourkey  --in ./mysecret-enc.base64 --out ./mysecret.txt
 `
 
 func NewDecryptCommand(

@@ -25,8 +25,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/go-pkgs/os"
-	"github.com/sumup-oss/go-pkgs/os/ostest"
+	"github.com/sumup-oss/vaulted/pkg/os"
+	"github.com/sumup-oss/vaulted/pkg/os/ostest"
 )
 
 func TestService_ReadPublicKeyFromPath(t *testing.T) {

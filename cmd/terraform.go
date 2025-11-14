@@ -16,7 +16,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/sumup-oss/go-pkgs/os"
+	"github.com/sumup-oss/vaulted/pkg/os"
 
 	"github.com/sumup-oss/vaulted/cmd/external_interfaces"
 	terraformCmd "github.com/sumup-oss/vaulted/cmd/terraform"

@@ -19,9 +19,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/sumup-oss/go-pkgs/os/ostest"
-	"github.com/sumup-oss/go-pkgs/testutils"
 	"github.com/sumup-oss/vaulted/internal/version"
+	"github.com/sumup-oss/vaulted/pkg/os/ostest"
+	"github.com/sumup-oss/vaulted/pkg/testutils"
 )
 
 func TestNewVersionCmd(t *testing.T) {

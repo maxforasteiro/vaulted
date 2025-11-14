@@ -24,7 +24,7 @@ import (
 	"runtime"
 
 	"github.com/palantir/stacktrace"
-	"github.com/sumup-oss/go-pkgs/os"
+	"github.com/sumup-oss/vaulted/pkg/os"
 )
 
 const (
