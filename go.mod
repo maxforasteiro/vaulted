@@ -1,4 +1,4 @@
-module github.com/sumup-oss/vaulted
+module github.com/maxforasteiro/vaulted
 
 require (
 	github.com/aws/aws-sdk-go-v2 v1.8.0
