@@ -21,10 +21,10 @@ import (
 
 	"github.com/palantir/stacktrace"
 
-	"github.com/sumup-oss/vaulted/pkg/vaulted"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/content"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/header"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/content"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/header"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
 )
 
 const (

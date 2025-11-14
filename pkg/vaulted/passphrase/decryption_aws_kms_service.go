@@ -19,7 +19,7 @@ import (
 
 	"github.com/palantir/stacktrace"
 
-	"github.com/sumup-oss/vaulted/pkg/aws"
+	"github.com/maxforasteiro/vaulted/pkg/aws"
 )
 
 type DecryptionAwsKmsService struct {

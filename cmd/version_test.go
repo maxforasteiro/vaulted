@@ -18,10 +18,10 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/maxforasteiro/vaulted/internal/version"
+	"github.com/maxforasteiro/vaulted/pkg/os/ostest"
+	"github.com/maxforasteiro/vaulted/pkg/testutils"
 	"github.com/stretchr/testify/assert"
-	"github.com/sumup-oss/vaulted/internal/version"
-	"github.com/sumup-oss/vaulted/pkg/os/ostest"
-	"github.com/sumup-oss/vaulted/pkg/testutils"
 )
 
 func TestNewVersionCmd(t *testing.T) {

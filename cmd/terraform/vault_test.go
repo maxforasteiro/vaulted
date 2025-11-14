@@ -18,14 +18,14 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/maxforasteiro/vaulted/pkg/aes"
+	"github.com/maxforasteiro/vaulted/pkg/base64"
+	"github.com/maxforasteiro/vaulted/pkg/hcl"
+	"github.com/maxforasteiro/vaulted/pkg/os/ostest"
+	"github.com/maxforasteiro/vaulted/pkg/pkcs7"
+	"github.com/maxforasteiro/vaulted/pkg/rsa"
+	"github.com/maxforasteiro/vaulted/pkg/testutils"
 	"github.com/stretchr/testify/assert"
-	"github.com/sumup-oss/vaulted/pkg/aes"
-	"github.com/sumup-oss/vaulted/pkg/base64"
-	"github.com/sumup-oss/vaulted/pkg/hcl"
-	"github.com/sumup-oss/vaulted/pkg/os/ostest"
-	"github.com/sumup-oss/vaulted/pkg/pkcs7"
-	"github.com/sumup-oss/vaulted/pkg/rsa"
-	"github.com/sumup-oss/vaulted/pkg/testutils"
 )
 
 func TestNewVaultCmd(t *testing.T) {

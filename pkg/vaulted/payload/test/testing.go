@@ -19,7 +19,7 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/sumup-oss/vaulted/pkg/vaulted/payload"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/payload"
 )
 
 type MockEncryptedPayloadService struct {

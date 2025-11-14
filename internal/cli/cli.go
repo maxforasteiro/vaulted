@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/palantir/stacktrace"
-	"github.com/sumup-oss/vaulted/pkg/os"
 )
 
 var ErrEmptyValue = errors.New("empty value")

@@ -22,12 +22,12 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/maxforasteiro/vaulted/internal/e2e"
+	"github.com/maxforasteiro/vaulted/pkg/os"
+	"github.com/maxforasteiro/vaulted/pkg/testutils"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/payload"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/vaulted/internal/e2e"
-	"github.com/sumup-oss/vaulted/pkg/os"
-	"github.com/sumup-oss/vaulted/pkg/testutils"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/payload"
 )
 
 var (

@@ -19,9 +19,9 @@ import (
 	"github.com/hashicorp/hcl/v2/hclwrite"
 	"github.com/palantir/stacktrace"
 
-	"github.com/sumup-oss/vaulted/pkg/hcl"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/payload"
+	"github.com/maxforasteiro/vaulted/pkg/hcl"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/payload"
 )
 
 const (

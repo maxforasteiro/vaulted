@@ -15,17 +15,17 @@
 package vault
 
 import (
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/palantir/stacktrace"
 	"github.com/spf13/cobra"
-	"github.com/sumup-oss/vaulted/pkg/os"
 
-	"github.com/sumup-oss/vaulted/cmd/external_interfaces"
-	"github.com/sumup-oss/vaulted/internal/cli"
-	"github.com/sumup-oss/vaulted/pkg/terraform"
-	"github.com/sumup-oss/vaulted/pkg/terraform_encryption_migration"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/content"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/payload"
+	"github.com/maxforasteiro/vaulted/cmd/external_interfaces"
+	"github.com/maxforasteiro/vaulted/internal/cli"
+	"github.com/maxforasteiro/vaulted/pkg/terraform"
+	"github.com/maxforasteiro/vaulted/pkg/terraform_encryption_migration"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/content"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/payload"
 )
 
 func NewRekeyCommand(

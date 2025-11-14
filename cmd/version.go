@@ -17,10 +17,10 @@ package cmd
 import (
 	"fmt"
 
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/spf13/cobra"
-	"github.com/sumup-oss/vaulted/pkg/os"
 
-	"github.com/sumup-oss/vaulted/internal/version"
+	"github.com/maxforasteiro/vaulted/internal/version"
 )
 
 func NewVersionCmd(

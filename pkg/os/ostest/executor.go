@@ -21,7 +21,7 @@ import (
 	"os/user"
 	"testing"
 
-	"github.com/sumup-oss/vaulted/pkg/os"
+	"github.com/maxforasteiro/vaulted/pkg/os"
 
 	"github.com/stretchr/testify/mock"
 )

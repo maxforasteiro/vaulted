@@ -18,7 +18,7 @@ import (
 	"github.com/hashicorp/hcl/v2/hclwrite"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/sumup-oss/vaulted/pkg/hcl"
+	"github.com/maxforasteiro/vaulted/pkg/hcl"
 )
 
 type MockTerraformSvc struct {

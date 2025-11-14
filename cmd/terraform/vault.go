@@ -15,11 +15,11 @@
 package terraform
 
 import (
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/spf13/cobra"
-	"github.com/sumup-oss/vaulted/pkg/os"
 
-	"github.com/sumup-oss/vaulted/cmd/external_interfaces"
-	"github.com/sumup-oss/vaulted/cmd/terraform/vault"
+	"github.com/maxforasteiro/vaulted/cmd/external_interfaces"
+	"github.com/maxforasteiro/vaulted/cmd/terraform/vault"
 )
 
 func NewVaultCmd(

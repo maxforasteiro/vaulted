@@ -1,14 +1,14 @@
 # vaulted
 
-[![Build status](https://github.com/sumup-oss/vaulted/workflows/Go/badge.svg?branch=master&event=push)](https://github.com/sumup-oss/vaulted/actions?query=workflow%3AGo)
-[![Go Report Card](https://goreportcard.com/badge/github.com/sumup-oss/vaulted)](https://goreportcard.com/report/github.com/sumup-oss/vaulted)
+[![Build status](https://github.com/maxforasteiro/vaulted/workflows/Go/badge.svg?branch=master&event=push)](https://github.com/maxforasteiro/vaulted/actions?query=workflow%3AGo)
+[![Go Report Card](https://goreportcard.com/badge/github.com/maxforasteiro/vaulted)](https://goreportcard.com/report/github.com/maxforasteiro/vaulted)
 
 Multi purpose cryptography tool for encryption/decryption using AES256 GCM.
 
 A "swiss-army" encryption/decryption knife with focus on developer experience, ease-of-use and
  integration capabilities in infrastructure-as-code software such as https://github.com/hashicorp/terraform.
 
-Combined with https://github.com/sumup-oss/terraform-provider-vaulted, it's shown 
+Combined with https://github.com/sumup-oss/terraform-provider-vaulted, it's shown
  at https://medium.com/@syndbg/provisioning-vault-encrypted-secrets-using-terraform-using-sumup-oss-vaulted-and-4aa9721d082c?source=friends_link&sk=9eabe1bbe6ba089fe176d94cf413862d
 
 ## Why
@@ -27,12 +27,12 @@ Combined with https://github.com/sumup-oss/terraform-provider-vaulted, it's show
 ## [How it works](./HOW_IT_WORKS.md)
 
 ## Used in:
- 
+
 * https://github.com/sumup-oss/terraform-provider-vaulted to provide encryption/decryption capabilities.
 * SumUp inner-source large-scale provision orchestration software projects.
 * SumUp inner-source projects that deploy using Ansible. Used to encrypt/decrypt the initial Ansible-Vault passphrase.
-* SumUp infrastructure provisioning via Terraform to provide Vault secrets and enable developers to 
- encrypt and submit secrets as PRs without anyone other than system administrators, devops, 
+* SumUp infrastructure provisioning via Terraform to provide Vault secrets and enable developers to
+ encrypt and submit secrets as PRs without anyone other than system administrators, devops,
  site-reliability engineers be able to decrypt them.
 * SumUp inner-source CI systems that need to encrypt/decrypt secrets in sandboxes.
 
@@ -46,7 +46,7 @@ Combined with https://github.com/sumup-oss/terraform-provider-vaulted, it's show
 
 ```shell
 # Generate PKCS#1 private key
-# NOTE: `-traditional` is needed for new versions of OpenSSL. For older versions you can omit it. 
+# NOTE: `-traditional` is needed for new versions of OpenSSL. For older versions you can omit it.
 # It's needed to generate PKCS#1 private key.
 > openssl genrsa -traditional -f4 -out private.pem 4096
 # Generate from private key, a public key
@@ -87,14 +87,14 @@ Example **unusable** with `vaulted` `PKCS#8`-formatted private key
 -----END PRIVATE KEY-----
 ```
 
-**What is the difference in base64-encoded content?** 
+**What is the difference in base64-encoded content?**
 
 Obvious different is in the PEM block names.
 
-However, in terms of content, `PKCS#8` PEM contains the `version` and `algorithm` identifiers and 
+However, in terms of content, `PKCS#8` PEM contains the `version` and `algorithm` identifiers and
  `private key` content.
 
-The `PKCS#1` PEM contains just the `private key` content. 
+The `PKCS#1` PEM contains just the `private key` content.
 
 ## Usage
 
@@ -126,12 +126,12 @@ Check out [CONTRIBUTING](./CONTRIBUTING.md)
 
 [SumUp](https://sumup.com) is a mobile-point of sale provider.
 
-It is our mission to make easy and fast card payments a reality across the *entire* world. 
+It is our mission to make easy and fast card payments a reality across the *entire* world.
 
-You can pay with SumUp in more than 30 countries, already. 
+You can pay with SumUp in more than 30 countries, already.
 
-Our engineers work in Berlin, Cologne, Sofia and Sāo Paulo. 
+Our engineers work in Berlin, Cologne, Sofia and Sāo Paulo.
 
-They write code in JavaScript, Swift, Ruby, Go, Java, Erlang, Elixir and more. 
+They write code in JavaScript, Swift, Ruby, Go, Java, Erlang, Elixir and more.
 
 Want to come work with us? [Head to our careers page](https://sumup.com/careers) to find out more.

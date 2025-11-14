@@ -19,8 +19,8 @@ import (
 	stdOs "os"
 
 	"github.com/hashicorp/hcl/v2/hclwrite"
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/palantir/stacktrace"
-	"github.com/sumup-oss/vaulted/pkg/os"
 )
 
 func WriteHCLout(

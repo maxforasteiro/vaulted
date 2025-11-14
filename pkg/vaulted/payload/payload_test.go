@@ -17,11 +17,11 @@ package payload
 import (
 	"testing"
 
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/content"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/header"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/content"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/header"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
 )
 
 func TestNewPayload(t *testing.T) {

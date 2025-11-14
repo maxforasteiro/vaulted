@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/sumup-oss/vaulted/pkg/vaulted"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted"
 )
 
 const (

@@ -23,8 +23,8 @@ import (
 	"hash"
 	"io"
 
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/palantir/stacktrace"
-	"github.com/sumup-oss/vaulted/pkg/os"
 )
 
 const (

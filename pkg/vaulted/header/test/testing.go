@@ -17,7 +17,7 @@ package test
 import (
 	"github.com/stretchr/testify/mock"
 
-	"github.com/sumup-oss/vaulted/pkg/vaulted/header"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/header"
 )
 
 type MockHeaderService struct {

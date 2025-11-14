@@ -15,13 +15,13 @@
 package cmd
 
 import (
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/spf13/cobra"
-	"github.com/sumup-oss/vaulted/pkg/os"
 
-	"github.com/sumup-oss/vaulted/pkg/aes"
-	"github.com/sumup-oss/vaulted/pkg/base64"
-	"github.com/sumup-oss/vaulted/pkg/hcl"
-	"github.com/sumup-oss/vaulted/pkg/rsa"
+	"github.com/maxforasteiro/vaulted/pkg/aes"
+	"github.com/maxforasteiro/vaulted/pkg/base64"
+	"github.com/maxforasteiro/vaulted/pkg/hcl"
+	"github.com/maxforasteiro/vaulted/pkg/rsa"
 )
 
 func NewRootCmd(

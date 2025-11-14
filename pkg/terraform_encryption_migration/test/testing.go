@@ -18,10 +18,10 @@ import (
 	"github.com/hashicorp/hcl/hcl/ast"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/sumup-oss/vaulted/pkg/hcl"
-	"github.com/sumup-oss/vaulted/pkg/terraform_encryption_migration"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/payload"
+	"github.com/maxforasteiro/vaulted/pkg/hcl"
+	"github.com/maxforasteiro/vaulted/pkg/terraform_encryption_migration"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/payload"
 )
 
 type MockTerraformEncryptionMigrationService struct {

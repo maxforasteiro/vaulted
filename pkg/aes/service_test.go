@@ -20,11 +20,11 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/maxforasteiro/vaulted/pkg/pkcs7"
+	"github.com/maxforasteiro/vaulted/pkg/pkcs7/test"
 	"github.com/palantir/stacktrace"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/vaulted/pkg/pkcs7"
-	"github.com/sumup-oss/vaulted/pkg/pkcs7/test"
 )
 
 func TestNewAesService(t *testing.T) {

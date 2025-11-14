@@ -23,10 +23,10 @@ import (
 	"io"
 	"testing"
 
+	"github.com/maxforasteiro/vaulted/pkg/os"
+	"github.com/maxforasteiro/vaulted/pkg/os/ostest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/vaulted/pkg/os"
-	"github.com/sumup-oss/vaulted/pkg/os/ostest"
 )
 
 func TestService_ReadPublicKeyFromPath(t *testing.T) {

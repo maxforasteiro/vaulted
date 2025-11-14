@@ -17,8 +17,8 @@ package test
 import (
 	"github.com/stretchr/testify/mock"
 
-	"github.com/sumup-oss/vaulted/pkg/vaulted/content"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/content"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
 )
 
 type MockEncryptedContentService struct {

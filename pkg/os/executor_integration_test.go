@@ -23,7 +23,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/sumup-oss/vaulted/pkg/testutils"
+	"github.com/maxforasteiro/vaulted/pkg/testutils"
 )
 
 func TestRealOsExecutor_ResolvePath(t *testing.T) {

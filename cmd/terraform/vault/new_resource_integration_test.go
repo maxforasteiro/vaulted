@@ -24,17 +24,17 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sumup-oss/vaulted/pkg/vaulted"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted"
 
+	"github.com/maxforasteiro/vaulted/pkg/aes"
+	"github.com/maxforasteiro/vaulted/pkg/base64"
+	"github.com/maxforasteiro/vaulted/pkg/os"
+	"github.com/maxforasteiro/vaulted/pkg/os/ostest"
+	"github.com/maxforasteiro/vaulted/pkg/pkcs7"
+	"github.com/maxforasteiro/vaulted/pkg/rsa"
+	"github.com/maxforasteiro/vaulted/pkg/testutils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/sumup-oss/vaulted/pkg/aes"
-	"github.com/sumup-oss/vaulted/pkg/base64"
-	"github.com/sumup-oss/vaulted/pkg/os"
-	"github.com/sumup-oss/vaulted/pkg/os/ostest"
-	"github.com/sumup-oss/vaulted/pkg/pkcs7"
-	"github.com/sumup-oss/vaulted/pkg/rsa"
-	"github.com/sumup-oss/vaulted/pkg/testutils"
 )
 
 func TestNewResourceCmd_Execute(t *testing.T) {

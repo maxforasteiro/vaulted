@@ -17,14 +17,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/sumup-oss/vaulted/pkg/os"
+	"github.com/maxforasteiro/vaulted/pkg/os"
 
-	"github.com/sumup-oss/vaulted/cmd"
-	"github.com/sumup-oss/vaulted/pkg/aes"
-	"github.com/sumup-oss/vaulted/pkg/base64"
-	"github.com/sumup-oss/vaulted/pkg/hcl"
-	"github.com/sumup-oss/vaulted/pkg/pkcs7"
-	"github.com/sumup-oss/vaulted/pkg/rsa"
+	"github.com/maxforasteiro/vaulted/cmd"
+	"github.com/maxforasteiro/vaulted/pkg/aes"
+	"github.com/maxforasteiro/vaulted/pkg/base64"
+	"github.com/maxforasteiro/vaulted/pkg/hcl"
+	"github.com/maxforasteiro/vaulted/pkg/pkcs7"
+	"github.com/maxforasteiro/vaulted/pkg/rsa"
 )
 
 func main() {

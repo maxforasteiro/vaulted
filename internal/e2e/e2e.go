@@ -23,12 +23,12 @@ import (
 	"path/filepath"
 	"runtime"
 
+	"github.com/maxforasteiro/vaulted/pkg/os"
 	"github.com/palantir/stacktrace"
-	"github.com/sumup-oss/vaulted/pkg/os"
 )
 
 const (
-	pkgPath             = "github.com/sumup-oss/vaulted"
+	pkgPath             = "github.com/maxforasteiro/vaulted"
 	windowsBinarySuffix = ".exe"
 )
 

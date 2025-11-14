@@ -17,7 +17,7 @@ package content
 import (
 	"github.com/palantir/stacktrace"
 
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
 )
 
 type V1Service struct {

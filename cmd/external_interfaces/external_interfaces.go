@@ -19,10 +19,10 @@ import (
 	"hash"
 	"io"
 
-	"github.com/sumup-oss/vaulted/pkg/hcl"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/content"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/passphrase"
-	"github.com/sumup-oss/vaulted/pkg/vaulted/payload"
+	"github.com/maxforasteiro/vaulted/pkg/hcl"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/content"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/passphrase"
+	"github.com/maxforasteiro/vaulted/pkg/vaulted/payload"
 )
 
 type HclService interface {
